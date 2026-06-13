@@ -1,5 +1,5 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 0;
   background: #111;
   color: white;
@@ -10,6 +10,15 @@ header {
   padding: 20px;
   background: #ff9900;
   color: black;
+}
+
+.aviso-afiliado {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .produtos {
@@ -27,31 +36,65 @@ header {
   width: 250px;
   text-align: center;
   transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 button {
   background: #ff9900;
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 button:hover {
   background: #cc7a00;
 }
 
-.sobre, .contato {
-  padding: 20px;
+.sobre,
+.contato,
+.afiliados {
+  padding: 30px 20px;
   text-align: center;
+}
+
+.afiliados {
+  background: #181818;
 }
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background: #000;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 85%;
+  }
 }
