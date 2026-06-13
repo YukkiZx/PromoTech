@@ -13,12 +13,13 @@ header {
 }
 
 .aviso-afiliado {
-  background: #222;
-  color: #fff;
+  background: #232f3e;
+  color: white;
   padding: 15px;
   text-align: center;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
 }
 
 .produtos {
@@ -76,12 +77,22 @@ button:hover {
 
 .afiliados {
   background: #181818;
+  padding: 30px;
 }
 
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   background: #000;
+}
+
+footer a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer p {
